@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title rel="">My Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="C:\Users\NITHISHA\Desktop\Internship_1\Task1\portfolio_icon.png">
+</head>
+
+<body>
+    <header >
+        
+        <div class="one">
+           
+            <h1 class="two">MY PORTFOLIO</h1>
+           
+        </div>
+    </header>
+    <main>
+        <div class="second">
+            <img src="C:\Users\NITHISHA\Desktop\Internship_1\Monisha Task1\Monisha.jpg">
+            <div class="four">
+                <p class="abt"><h2 class="name">Monisha M</h2><br><p class="sub">-Your Vision, My Code. </p><br>Im currently in my second year of college, and<br> over the past year, I have learned and practiced <br>Python, HTML, CSS, JavaScript. I have a basic<br> understanding of AI, and I'm looking forward to<br> applying in the web field. I'm an aspiring AI engineer<br> with a passion for becoming a Data Analyst and<br> I love working with data. </p>
+            </div> 
+    <center>   
+        <div class="skills">
+            <h2 class="five">Skills</h2>
+            <ul class="six">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>RapidMiner</li>
+                <li>PowerBi</li>
+            </ul>
+        </div>
+        <script>
+            window.addEventListener('scroll', function() {
+                const listItems = document.querySelectorAll('.six li');
+                
+                listItems.forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+    
+                    if (rect.top < windowHeight - 50) {
+                        item.classList.add('show');
+                    }
+                });
+            });
+        </script>                            
+
+    
+</center>    
+    <div class="projects">
+        <h2 class="head">Projects</h2>
+        <div class="proj1">
+            <h3 class="proj1head">Developing smart & affordable solution<br> to protect crops from wild animals.</h3>
+            <p class="proj1des">I had the opportunity to collaborate on a data science
+                               project aimed at protecting crops from wildlife attacks. As
+                               a dedicated teammate, I brought analytical skills and
+                               innovative thinking to the forefront of our efforts. Our
+                               project leveraged ml algorithms to predict and prevent
+                               wildlife intrusions, ensuring farmers could safeguard their.
+            </p>
+            <p class="proj1des" style=" transform: translateY(-60px)">My role involved data collection and preprocessing, where
+                                I meticulously gathered and cleaned data from various
+                                sources, including satellite imagery and sensor data.
+
+            </p>
+            <p class="proj1des" style=" transform: translateY(-90px)">Collaboration was vital to our success. I worked closely
+                                with my teammates to design and implement solutions,
+                                ensuring our models were accurate and reliable. We
+                                integrated real-time monitoring systems and automated
+                                alerts to inform farmers of potential threats, significantly
+                                reducing crop damage and loss.
+
+            </p>
+        </div>
+        <div class="proj2">
+            <h3 class="proj2head">Deep-Fake Detection</h3>
+            <p class="proj2des" >I undertook an exciting project in the field of Deep Fake
+                                Detection, working alongside a dedicated team to
+                                develop a robust solution for distinguishing real videos
+                                from fake ones. Our project centered around leveraging
+                                Long Short-Term Memory (LSTM) networks, a type of
+                                recurrent neural network particularly effective in
+                                processing sequential data.
+
+            </p>
+            <p class="proj2des" style=" transform: translateY(-70px)">As a project teammate, I was deeply involved in various
+                                stages of the project. I contributed to the data
+                                preprocessing phase, where we collected and cleaned a
+                                comprehensive dataset of real and fake videos.
+            </p>
+            <p class="proj2des" style=" transform: translateY(-120px)">I played a key role in designing and implementing the
+                                LSTM model. My responsibilities included fine-tuning the
+                                model's hyperparameters, training it on our dataset, and
+                                evaluating its performance through rigorous testing.
+                
+            </p>
+            <p class="proj2des" style=" transform: translateY(-160px)">This project not only enhanced my technical skills but
+                                also reinforced the importance of teamwork, innovation,
+                                and dedication in tackling complex real-world problems.                   
+            </p>
+        </div> 
+    
+    </div>
+    <div class="contact">
+        <h2>Resume</h2>
+        <button class="download-btn" onclick="downloadResume()">Download Resume</button>
+    </div>
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'C:\Users\NITHISHA\Desktop\Internship_1\Monisha Task1\Monisha_Resume.pdf'; // Replace with the path to your resume
+            link.download = 'Monisha M -Resume'; // Replace with the desired file name
+            link.click();}
+    </script>    
+
+
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact Information</h2>
+        <p>Email: monisha.m2104@gmail.com</p>
+        <p>Phone: 8903345451</p>
+        <p>Address: Your Address Here</p>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p style="color:white">&copy; 2024 Monisha M. All rights reserved.</p>
+        <p style="color:white">Privacy Policy  | Terms of Service</p>
+        <p style="color:white">Contact: 8903345451  <br>
+               mail: monisha.m2104@gmail.com</p>
+    </footer>
+    </main>
+</body>
+
+</html>
